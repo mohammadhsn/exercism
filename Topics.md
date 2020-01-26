@@ -1,4 +1,4 @@
-#Pre commit
+# Pre commit
 Install [pre commit](https://pre-commit.com/) on your machine. The `.pre-commit-config` file contains some configurations to fix coding style/unit testing/... before commit.
 
 
