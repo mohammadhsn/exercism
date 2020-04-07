@@ -180,7 +180,8 @@ class Nucleotide
     /**
      * @param string $char
      */
-    public function __construct($char){
+    public function __construct($char)
+    {
         $this->char = $char;
     }
 

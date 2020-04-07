@@ -448,5 +448,3 @@ composer.lock
 phpunit.phar
 .php_cs.cache
 .phpunit.result.cache
-
-*_test.php
