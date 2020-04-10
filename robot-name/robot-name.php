@@ -17,7 +17,7 @@ class Robot
         $this->number = new NumbersGenerator;
     }
 
-    public function setName(string $name): bool
+    protected function setName(string $name): bool
     {
         if ($name === $this->name || in_array($name, $this->names)) {
             return false;
@@ -27,7 +27,7 @@ class Robot
         return true;
     }
 
-    public function generateName()
+    protected function generateName()
     {
         return $this->letter->generateMany(2) . $this->number->generateMany(3);
     }
@@ -92,9 +92,3 @@ class NumbersGenerator extends StringGenerator
         return self::LETTERS;
     }
 }
-
-// $r = new Robot;
-// var_dump($r->getName());
-// var_dump($r->getName());
-// $r->reset();    
-// var_dump($r->getName());
